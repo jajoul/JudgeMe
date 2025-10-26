@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Registration Complete{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'user/css/style.css' %}">
+<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+
+<div class="register-container">
+    <div class="register-box" style="text-align: center;">
+        <h2>Registration Complete!</h2>
+        <dotlottie-wc src="https://lottie.host/d5665ccb-67f6-499a-8c2b-a177179f15f4/4HJbd1VDwW.lottie" style="width: 300px; height: 300px; margin: 0 auto;" autoplay loop></dotlottie-wc>
+        <p>Your account has been created successfully.</p>
+        <a href="#" class="btn-submit" style="margin-top: 20px; display: inline-block;">Login</a>
+    </div>
+</div>
+{% endblock %}

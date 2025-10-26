@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home - JudgeMe{% endblock %}
+
+{% block content %}
+<section class="hero-section video-background-section">
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="{% static 'videos/social-phone.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay"></div>
+    <div class="hero-text-on-video">
+        <h1>Welcome to JudgeMe!</h1>
+        <p>JudgeMe is a demo template, showcasing the potential for a dynamic and engaging social media platform.</p>
+        <p>
+            Unleash your creativity and connect with a vibrant community. Share your thoughts,
+            express yourself with captivating images, or spark discussions with interactive polls.
+            This template provides a robust foundation for your next big social media idea,
+            designed with modern aesthetics and user experience in mind.
+        </p>
+    </div>
+</section>
+
+<section class="social-feature-section">
+    <div class="feature-content">
+        <div class="feature-text">
+            <h2>Discover and Engage</h2>
+            <p>
+                Dive into a world of endless content. Browse through pages of posts, discover new creators, and engage with a community that shares your passions. Our platform is designed for exploration and connection.
+            </p>
+            <a href="#" class="btn">Browse Pages</a>
+        </div>
+        <div class="feature-image">
+            <img src="{% static 'images/Image_fx (3).jpg' %}" alt="Social media feature">
+        </div>
+    </div>
+<section class="channels-feature-section social-feature-section">
+    <div class="feature-content feature-content-reversed">
+        <div class="feature-image">
+            <img src="{% static 'images/Image_fx (5).jpg' %}" alt="Channels feature">
+        </div>
+        <div class="feature-text">
+            <h2>Create and Join Channels</h2>
+            <p>
+                Build your own communities or join existing ones. Channels are a great way to connect with people who share your interests. Create a channel for your hobby, your favorite sports team, or anything else you're passionate about.
+            </p>
+            <a href="#" class="btn">Explore Channels</a>
+        </div>
+    </div>
+<section class="ai-feature-section social-feature-section">
+    <div class="feature-content">
+        <div class="feature-text">
+            <h2>AI-Powered Content Moderation</h2>
+            <p>
+                Our advanced AI monitors content before it's published, ensuring a safe and secure environment for all users. Post with confidence, knowing that JudgeMe is committed to maintaining a positive and respectful community.
+            </p>
+            <a href="#" class="btn">Learn More about AI Safety</a>
+        </div>
+        <div class="feature-image">
+            <img src="{% static 'images/Image_fx (7).jpg' %}" alt="AI content moderation">
+        </div>
+    </div>
+</section>
+<section class="technologies-section">
+    <div class="container">
+        <h2>Technologies Powering JudgeMe</h2>
+        <div class="technology-grid">
+            <div class="technology-item">
+                <i class="fab fa-python"></i> <!-- Placeholder for Python icon -->
+                <h3>Python</h3>
+            </div>
+            <div class="technology-item">
+                <i class="devicon-django-plain"></i>
+                <h3>Django</h3>
+            </div>
+            <div class="technology-item">
+                <i class="fab fa-html5"></i> <!-- Placeholder for HTML5 icon -->
+                <h3>HTML5</h3>
+            </div>
+            <div class="technology-item">
+                <i class="fab fa-css3-alt"></i> <!-- Placeholder for CSS3 icon -->
+                <h3>CSS3</h3>
+            </div>
+            <div class="technology-item">
+                <i class="fab fa-js-square"></i> <!-- Placeholder for JavaScript icon -->
+                <h3>JavaScript</h3>
+            </div>
+            <div class="technology-item">
+                <i class="fas fa-database"></i> <!-- Placeholder for SQLite icon -->
+                <h3>SQLite</h3>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
