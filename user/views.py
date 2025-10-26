@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views.generic import View
 from .models import CustomUser
-from django.contrib.auth import login
+from django.contrib.auth import login, authenticate
 
 class StepOneRegisterView(View):
     def get(self, request, *args, **kwargs):
@@ -73,9 +73,9 @@ class LoginView(View):
     def post(self, request, *args, **kwargs):
         username = request.POST.get('username')
         password = request.POST.get('password')
-        user = CustomUser.objects.filter(username=username).first()
-        if user is None:
-            return render(request, 'user/login.html', {'error': 'Invalid username or password.'})
-        if user.password==password:
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
             login(request, user)
             return redirect('blog:home')
+        else:
+            return render(request, 'user/login.html', {'error': 'Invalid username or password.'})
