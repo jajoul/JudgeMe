@@ -14,7 +14,7 @@ JudgeMe is a social media web application built with Django. It allows users to 
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/JudgeMe.git
+    git clone https://github.com/jajoul/JudgeMe.git
     ```
 2.  **Create a virtual environment and activate it:**
     ```bash
@@ -45,6 +45,10 @@ JudgeMe is a social media web application built with Django. It allows users to 
 2.  Log in to your account at `/auth/login/`.
 3.  Create a new post at `/post/create/`.
 4.  View the main feed on the home page.
+
+## Contributing
+
+Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue on the [GitHub repository](https://github.com/jajoul/JudgeMe/issues).
 
 ## Future Development
 
